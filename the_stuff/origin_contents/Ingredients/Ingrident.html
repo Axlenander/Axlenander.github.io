@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> the origin </title>
+    <base href="../../../">
+    <!-- copy pasted code-->
+    <link rel="stylesheet" href="the_stuff/origin_contents/originstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="the_stuff/favicon.ico" />
+
+  </head>
+  
+  <body>
+    <style>
+      body{
+        background-color: #f57faa;
+        color: black;
+        
+        #stuff
+        {
+          visibility: hidden;
+        }
+        
+      }
+      
+    </style> 
+    <!-- copy pasted code -->
+    
+    <nav>
+      <div id="nav-placeholder">
+        
+      </div>
+      
+      <script>
+        $(function(){
+        $("#nav-placeholder").load("the_stuff/origin_contents/nav.html");
+        });
+      </script>
+    </nav>
+    
+    <header>
+      <h1>Ingridents!!!</h1>
+    </header>
+    
+    <main>
+    <!--
+      Here are the links to the ingridents(I'm trying to figure out how to allow you to change stuff<br>
+      <h2>
+      <a href="the_stuff/origin_contents/Ingredients/ZYWFresh.html">Fresh</a><br>
+      <a href="the_stuff/origin_contents/Ingredients/ZYXFrozen.html">Frozen</a><br>
+      <a href="the_stuff/origin_contents/Ingredients/ZYYPreserved.html">Preserved</a><br>
+      <a href="the_stuff/origin_contents/Ingredients/ZYZPrecooked.html">Precooked</a></h2>
+      -->
+      Click the button to get the next group of food!
+      <button onclick="setTimeout(bbbb, 300);">Next grouping</button>
+      <div id="stuff">
+        <h1>Fresh Ingredients</h1> 
+        <h2>What I have to cook with in my kitchen(may not be up to date)</h2>
+      </div>
+    </main>
+    <script>
+      let b=1;
+      function bbbb()
+      {
+        b++;
+        if(b === 1)
+        {
+          document.getElementById("stuff").innerHTML ="<h1>Fresh Ingredients</h1> <h2>What I have to cook with in my kitchen(may not be up to date)</h2>";
+        }
+        else if(b === 2)
+        {
+          document.getElementById("stuff").innerHTML ="<header> <h1>Frozen</h1> <h2>What I have to cook with in my kitchen(may not be up to date)</h2> </header> <section> <header> <h3>Fruits and Veggies</h3> </header> Corn<br> Strawberries<br> Mango chunks<br> Diced Peas and Carrots<br> Brocolli<br> String Beans<br> Peas<br> Teryaki Stir Fry(kinda>)<br> </section>";
+        }
+        else if(b === 3)
+        {
+          document.getElementById("stuff").innerHTML ="<header> <h1>Preserved Ingredients</h1> <h2>What I have to cook with in my kitchen(may not be up to date)</h2> </header> <section> <header> <h3>Spices</h3> </header> Ground Cinamon<br> Ground Nutmeg<br> Cinamon Sugar<br> Paprika<br> Basil Leaves<br> Oregano<br> Thyme<br> Pepermint Extract<br> Curry powder x2<br> Ground Tumeric<br> White Sesame Seed<br> Bay leaves<br> Crystalized Ginger<br> Italian Seasoning<br> Garlic Powder<br> <i>Salt and pepper</i><br> </section> <section> <header> <h3>Baking Goods</h3> </header> Flour<br> Corn Starch<br> Milk Powder<br> Baking Powder<br> Baking Soda<br> Shortening(All Vegtable)<br> Long Grain Rice<br> Powdered Sugar<br> Brown Sugar<br> 1 Stick of Butter<br> </section> <section> <header> <h3>Sauces</h3> </header> Soy Sauce<br> Prego<br> Wostershire Sauce<br> Bar BQ Sauce<br> Barilla(Flavored with Meat)<br> Ragu<br> </section> <section> <header> <h3>Other for now </h3> </header> Pasta Elbows<br> Muliple Canned Foods<br> <ul> <li> Tomato Bisque </li> <li> Cheddar cheese cream </li> <li> Sweet Potatoes </li> <li> Pinto Beans </li> </ul> honey<br> Chunky Peanut Butter<br> Sesame oil<br> Ritz Crackers<br> Saltines<br> </section>";
+        }
+        else if(b === 4)
+        {
+          document.getElementById("stuff").innerHTML ="<header> <h1>Precooked Meals</h1> <h2>What I have to cook with in my kitchen(may not be up to date)</h2> </header>";
+          b=0;
+        }
+      }
+    </script>
+    
+    
+<!--
+    <div id="fresh">
+        <h1>Fresh Ingredients</h1>
+      <h2>What I have to cook with in my kitchen(may not be up to date)</h2>
+    </div>
+      
+    <div id="frozen">
+        <header>
+      <h1>Frozen</h1>
+      <h2>What I have to cook with in my kitchen(may not be up to date)</h2>
+    </header>
+      <section>
+        <header>
+          <h3>Fruits and Veggies</h3>
+        </header>
+        Corn<br>
+        Strawberries<br>
+        Mango chunks<br>
+        Diced Peas and Carrots<br>
+        Brocolli<br>
+        String Beans<br>
+        Peas<br>
+        Teryaki Stir Fry(kinda>)<br>
+      </section>
+    </div>
+    
+    <div id="perserved">
+    <header>
+      <h1>Preserved Ingredients</h1>
+      <h2>What I have to cook with in my kitchen(may not be up to date)</h2>
+    </header>
+      <section>
+        <header>
+          <h3>Spices</h3>
+        </header>
+        Ground Cinamon<br>
+        Ground Nutmeg<br>
+        Cinamon Sugar<br>
+        Paprika<br>
+        Basil Leaves<br>
+        Oregano<br>
+        Thyme<br>
+        Pepermint Extract<br>
+        Curry powder x2<br>
+        Ground Tumeric<br>
+        White Sesame Seed<br>
+        Bay leaves<br>
+        Crystalized Ginger<br>
+        Italian Seasoning<br>
+        Garlic Powder<br>
+        <i>Salt and pepper</i><br>
+      </section>
+      <section>
+        <header>
+          <h3>Baking Goods</h3>
+        </header>
+        Flour<br>
+        Corn Starch<br>
+        Milk Powder<br>
+        Baking Powder<br>
+        Baking Soda<br>
+        Shortening(All Vegtable)<br>
+        Long Grain Rice<br>
+        Powdered Sugar<br>
+        Brown Sugar<br>
+        1 Stick of Butter<br>
+      </section>
+      <section>
+        <header>
+          <h3>Sauces</h3>
+        </header>
+        Soy Sauce<br>
+        Prego<br>
+        Wostershire Sauce<br>
+        Bar BQ Sauce<br>
+        Barilla(Flavored with Meat)<br>
+        Ragu<br>
+      </section>
+      <section>
+        <header>
+          <h3>Other for now </h3>
+        </header>
+        Pasta Elbows<br>
+        Muliple Canned Foods<br>
+        <ul>
+          <li> Tomato Bisque </li>
+          <li> Cheddar cheese cream </li>
+          <li> Sweet Potatoes </li>
+          <li> Pinto Beans </li>
+        </ul>
+        honey<br>
+        Chunky Peanut Butter<br>
+        Sesame oil<br>
+        Ritz Crackers<br>
+        Saltines<br>
+      </section>
+    </div>
+    
+    <div id="precooked">
+      <header>
+        <h1>Precooked Meals</h1>
+        <h2>What I have to cook with in my kitchen(may not be up to date)</h2>
+      </header>
+    </div>
+-->
+    
+    
+  </body>
+</html>

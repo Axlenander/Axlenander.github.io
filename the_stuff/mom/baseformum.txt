@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> the origin </title>
+    <base href="../../">
+    <!-- copy pasted code-->
+    <link rel="stylesheet" href="the_stuff/origin_contents/originstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="the_stuff/favicon.ico" />
+
+  </head>
+  
+  <body>
+    <style>
+      body{
+        background-color: #00c7c7;
+        color: black;
+      }
+    </style> 
+    <!-- copy pasted code -->
+    
+    <nav>
+      <div id="nav-placeholder">
+        
+      </div>
+      
+      <script>
+        $(function(){
+        $("#nav-placeholder").load("the_stuff/mom/nav.html");
+        });
+      </script>
+    </nav>
+    
+    <header>
+      
+    </header>
+    
+    <main>
+      
+    </main>
+    
+  </body>
+</html>
